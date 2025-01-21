@@ -1,0 +1,235 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body> 
+  <header id="header">
+   <img id="header-img" src="https://forsining.com.ua/files/images/logo.svg" alt="forsining brand logo" />
+    <nav id="nav-bar">
+      <ul>
+        <li><a class="nav-link" href="#features">Features</a></li>
+        <li><a class="nav-link" href="#models">Models</a></li>
+        <li><a class="nav-link" href="#shipping">Shipping</a></li>
+      </ul>
+    
+    </nav>
+  </header>
+  <main>
+  <fieldset>
+    <h2 class="watches">Stylish, Battery-free watches at a great price</h2>
+    <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
+      <label for="email"><input id="email" type="email" name="email" placeholder="Type your email"></label>
+      <input id="submit" type="submit" value="Register!">
+    </form>
+  </fieldset>
+  <h1 id="features-title">Key Features</h1>
+    <section id="features">
+      <img class="icon" src="https://static.thenounproject.com/png/12376-200.png" />
+      <article>
+            
+        <h2>Automatic</h2>
+        <p>Automatic movements mark the passage of time by a series of gear mechanisms, and are worked by the movement of your wrist as you wear it.</p>
+      </article>
+     <img class="icon" src="https://images.vexels.com/media/users/3/325638/isolated/preview/0e697349410a68886c2285b5e281100c-cogs-and-gears-stroke-icon.png">
+      <article>
+        <h2>Transparent Skeleton</h2>
+        <p>Open work transparent movement design with Stainless Steel band and colurful dial design.</p>
+      </article>
+       <img class="icon" src="https://cdn-icons-png.flaticon.com/512/6803/6803294.png" />
+      <article>
+        <h2>Without Battery</h2>
+        <p> Only need to wind the mechanical watch and it will keep working, don't need worry about a dead battery</p>
+      </article>
+    </section>
+    <h1 class="models-title">Some of our models</h1>
+    <section id="models">
+      
+      <img id="349" src="https://ae01.alicdn.com/kf/S63a35d6060904693a8e0cb77a9d8b809h.jpg"  />
+      <img id="6018"src="https://ae01.alicdn.com/kf/S74714358dce04e5eb706bd74bf03f5a7a.jpg_960x960.jpg" />
+      <img id="1137" src="https://finalins.com/cdn/shop/files/S1178c6c26ebe4963923349e64e54b3d7b.webp?v=1721121028"  />
+      <img id="1148" src="https://s.alicdn.com/@sc04/kf/H05344e00870742779ae00630979d20dez.jpg_720x720q50.jpg"  />
+    </section>
+   
+    <iframe id="video"  src="https://www.youtube.com/embed/hiLbnoIe21k" title="Famous Brand FORSINING 2021 New Design Automatic Skeleton Diamond Watch FSG8202M4S1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <section id="shipping">
+      <img src="https://cdn-icons-png.flaticon.com/256/6831/6831000.png" />
+      <div class="free">
+      <p><i>Free shipping in Colombia for purchases over 70 000COP</i></p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+*, *::before, *::after{
+  box-sizing: border-box;
+  margin:0;
+  font-family: georgia, sans-serif;
+  color: #3b1509;
+}
+#header-img{
+  height: 70px;
+  padding: 10px;
+}
+header{
+  position: fixed;
+  width: 100%;
+  display: flex;
+  background-color: beige;
+  justify-content: space-between;
+  align-items: center;
+}
+li{
+  padding: 1em;
+}
+ul{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+a{
+ text-decoration: none;
+ color: #303030;
+ font-size: 1.1em;
+}
+a:hover{
+  background-color: saddlebrown;
+  padding: 10px;
+  color: beige;
+}
+.watches{
+  font-family: arial;
+  color: #303030;
+  font-size: 1.2em;
+  padding-bottom: .5em;
+  text-align: center;
+}
+fieldset{
+  border: none;
+  padding-bottom: 70px;
+}
+
+input{
+  display: block;
+  padding: 0.3em;
+  border-radius: 10px;
+  font-size: 1.2em;
+  background-color: beige;
+  margin: 0 auto;
+  margin-bottom: 0.5em;
+}
+
+
+input[type="submit"]{
+  display: block;
+  margin: 0 auto;
+  border: none;
+  background-color: maroon;
+  color: beige;
+}
+main{
+  padding-top: 120px;
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+#features-title{
+  text-align: center;
+  font-size: 2rem;
+  padding-bottom: 1em;
+}
+
+.icon{
+  width: 100%;
+}
+#features{
+  display: grid;  
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: minmax(60px, 0.3fr) 3fr;
+  justify-items: left;
+  align-items: center;
+  column-gap: 2em;
+  row-gap: 1.5em;
+  padding-bottom: 3rem;
+}
+
+.models-title{
+  font-size: 2rem;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+#models{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding-bottom: 40px;
+
+}
+
+#models img{
+  max-width: 200px;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  
+}
+#video{
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  aspect-ratio: 1.7;
+}
+iframe{
+  padding-bottom: 40px;
+}
+
+#shipping{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0,255,0,0.15);
+  padding: 0.5rem;
+}
+#shipping img{
+  width: 100px;
+}
+#shipping p{
+  font-size: 1.5em;
+  margin-left: 1em;
+}
+@media (max-width:500px){
+  body{
+    font-size: 0.6rem;
+  }
+  h2{
+    font-size: 0.9rem !important;
+  }
+  h1{
+    font-size: 1.2rem !important;
+  }
+  #header-img{
+    height: 50px;
+  }
+
+}
+
+
+** end of undefined **
+
